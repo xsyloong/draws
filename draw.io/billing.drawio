@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.0.1">
+  <diagram name="第 1 页" id="on79oUCmp4KGUMs3knrF">
+    <mxGraphModel dx="1665" dy="743" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-8" value="Pool" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;horizontal=0;horizontalStack=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="120" width="950" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-9" value="MAXSTORE" style="swimlane;startSize=20;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-8">
+          <mxGeometry x="20" width="290" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-13" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-9">
+          <mxGeometry x="67.5" y="80" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-14" value="用户订阅AirLink" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-9">
+          <mxGeometry x="57.5" y="90" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-15" value="用户点击充值AirLink" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-9">
+          <mxGeometry x="68" y="190" width="159.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.482;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="Rb_VMglPwoGqHI8GP8zq-9" source="Rb_VMglPwoGqHI8GP8zq-13" target="Rb_VMglPwoGqHI8GP8zq-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="360" as="sourcePoint" />
+            <mxPoint x="560" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Rb_VMglPwoGqHI8GP8zq-9" target="Rb_VMglPwoGqHI8GP8zq-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="213" as="sourcePoint" />
+            <mxPoint x="280" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-10" value="Zolon Billing" style="swimlane;startSize=20;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-8">
+          <mxGeometry x="310" width="310" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-18" value="订单同步到Billing&lt;div&gt;并在Prepayment Approval展示&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-10">
+          <mxGeometry x="80" y="185" width="150" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-11" value="INET" style="swimlane;startSize=20;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-8">
+          <mxGeometry x="620" width="330" height="690" as="geometry">
+            <mxRectangle x="230" width="40" height="640" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-20" value="从INET同步用户充值的银行流水" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Rb_VMglPwoGqHI8GP8zq-11">
+          <mxGeometry x="75" y="183" width="180" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="Rb_VMglPwoGqHI8GP8zq-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shadow=1;" edge="1" parent="Rb_VMglPwoGqHI8GP8zq-8" source="Rb_VMglPwoGqHI8GP8zq-18" target="Rb_VMglPwoGqHI8GP8zq-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="380" as="sourcePoint" />
+            <mxPoint x="540" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
